@@ -1,23 +1,23 @@
-# CustomCommands for Minecraft
-A plugin for Minecraft servers that provides custom commands for server hosts to implement on their servers.
+# Twitter Bot with Google Cloud Functions
+A Twitter bot that automatically tweets out messages from a Google Sheets document using the Twitter API, Google Sheets API, and Google Cloud Functions.
 
 # Features
-* Add custom commands to your Minecraft server with ease.
-* Easy-to-use interface for adding, modifying, and removing commands.
-* Flexible command syntax, allowing for a variety of parameters and options.
-* Option to set permissions for each custom command, so only certain players can use them.
+* Automatically tweet messages stored in a Google Sheets document.
+* Option to set the frequency of tweets.
+* Easy-to-use interface for managing the Google Sheets document.
+* Ability to add, modify, and delete messages in the Google Sheets document.
+* Scalable and reliable execution of the tweeting function using Google Cloud Functions.
+# Prerequisites
+* A Twitter account and Twitter API key.
+* A Google account with access to Google Cloud Functions and Google Sheets API key.
 # Installation
-* Download the plugin from the releases tab.
-* Place the jar file in the plugins folder of your Minecraft server.
-* Start the server to complete the installation.
+* Clone the repository to your local machine.
+* Run npm install to install the dependencies.
+* Rename the config.template.js file to config.js and enter your Twitter API and Google Sheets API keys.
+* Deploy the function to Google Cloud Functions by following the instructions in the functions directory.
+* Schedule the function to run at the desired frequency using the Google Cloud Console.
 # Usage
-* Type /cc to open the CustomCommands interface.
-* Add a new command by clicking on the "Add Command" button.
-* Enter the command name, syntax, and description.
-* Optionally, set permissions for the command.
-* Save the command and it will be ready to use on your server.
-# Support
-* If you encounter any issues or have questions, please open an issue on the GitHub repository or contact us via email. We will do our best to assist you.
-
-# Contributing
-* If you would like to contribute to the development of CustomCommands, please fork the repository and create a pull request with your changes. We welcome * all contributions!
+* Create a Google Sheets document and add the messages you want to tweet.
+* In the config.js file, set the Google Sheets document ID.
+* Deploy the function and schedule it to run at the desired frequency.
+* Watch as the function automatically tweets out your messages from the Google Sheets document.
